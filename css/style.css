@@ -19,7 +19,14 @@
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
-
+.my-custom-scrollbar {
+    position: relative;
+    height: 80vh;
+    overflow: auto;
+}
+    .table-wrapper-scroll-y {
+    display: block;
+}
 .navbar{
     background-color: #91397f;
 }
@@ -29,21 +36,21 @@ header div.jumbotron{
     background: url("../img/university.jpg") no-repeat 0px;
     background-size:cover;  
     text-align: center;
+    font-size: 50px;
 }
-
-
-
-
 
 main{
     overflow: hidden;
-    min-height: 60vh;
+    min-height: 100vh;
 }
 
 #main_column{
     margin: 10px;
 	float: right;
 	width: 65%;
+}
+#main_column h1, section h1{
+    font-weight: bold;
 }
 #sidebar{
     margin: 10px;
@@ -59,6 +66,11 @@ main{
 #sidebar .main_links li a{
     list-style: none;
 }
+
+.vl {
+    border-left: 6px solid green;
+    height: 50px
+  }
 
 
 
@@ -95,7 +107,7 @@ footer {
     width: 33.33%;
 ;
 }
-.footer-box h6, .highlighted-item, .navbar-brand, section h5, .main_column h1{
+.footer-box h6, .highlighted-item, .navbar-brand, #sidebar h5{
     font-size: 20px;
     font-weight: bold;
 }
@@ -130,8 +142,6 @@ footer li a{
 footer li a:hover{
     color: #fff;
 }
-
-
 
 
 
