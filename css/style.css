@@ -43,13 +43,16 @@ main{
     overflow: hidden;
     min-height: 100vh;
 }
-
-#main_column{
+.main_title, header .jumbotron .display-4, .jumbotron .lead{
+    text-align: center;
+    font-weight: bold;
+}
+.main_column{
     margin: 10px;
 	float: right;
 	width: 65%;
 }
-#main_column h1, section h1{
+.main_column h1, section h1{
     font-weight: bold;
 }
 #sidebar{
@@ -66,17 +69,30 @@ main{
 #sidebar .main_links li a{
     list-style: none;
 }
+.finance{
+    padding: 50px;
+    background: #e6e3e3
+}
+.card{
+    background: #5f2253;
+    font-weight: bold;
+}
+.funding{
+    background: #5f2253;
+    color: #fff;
+    margin: 20px 0px 20px 0px;
+    font-weight: bold;
 
-.vl {
-    border-left: 6px solid green;
-    height: 50px
-  }
-
-
+}
+.funding_options{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
 
 /* ####### Footer ####### */
 
-footer {
+.main-footer {
     background: #5f2253;
     color: #fff;
     min-height: 300px;
@@ -84,7 +100,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 .footer-content{
     width: 100%;
     display: flex; 
@@ -158,7 +173,13 @@ footer li a:hover{
 }	
 
  
-@media (max-width: 800px) {
+@media (max-width: 992px) {
+    .card-group{
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
     .main-footer{
         overflow: hidden;
     }
