@@ -41,7 +41,7 @@ header div.jumbotron{
 
 main{
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 .main_title, header .jumbotron .display-4, .jumbotron .lead{
     text-align: center;
@@ -169,7 +169,7 @@ footer li a:hover{
 }	
 
  
-@media (max-width: 992px) {
+@media (max-width: 800px) {
     .card-group{
         width: 80%;
         margin: auto;
@@ -208,7 +208,6 @@ footer li a:hover{
     }
     .footer-content .footer-top-menu{
         display: block;
-        /* padding: 0; */
         margin: 0;
     }
     .footer-bottom-wrapper{
