@@ -27,6 +27,8 @@
     .table-wrapper-scroll-y {
     display: block;
 }
+
+/* #####  NAVIGATION AND HEADER####### */
 .navbar{
     background-color: #91397f;
 }
@@ -38,6 +40,9 @@ header div.jumbotron{
     text-align: center;
     font-size: 50px;
 }
+
+
+/* ######### MAIN BODY ###########  */
 
 main{
     overflow: hidden;
@@ -227,6 +232,43 @@ main .cont{
     margin: auto;
 }
 
+.about-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section{
+    background: url(../img/university.jpg) no-repeat;
+    /* background-size: cover; */
+    background-size: 80%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.about-container{
+    width: 55%;
+    float: right;
+    background-color:#f1f1f1;
+    /* background: rgba(253, 253, 253, 0.801); */
+    padding: 150px;
+}
+
+.about-text{
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px; 
+}
+
+
 /* ####### Footer ####### */
 
 .main-footer {
@@ -333,6 +375,13 @@ footer li a:hover{
 	.navbar .nav-item:hover .dropdown-menu{ transition: .5s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg);}
 }	
 
+@media screen and (max-width:1200px) {
+    .about-container{
+        padding: 80px;
+    }
+    
+}
+
 @media screen and (max-width: 900px) {
 
     .cont{
@@ -356,40 +405,14 @@ footer li a:hover{
     .img-8{
         min-height: 20.75rem;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .image-gallery{
-        grid-template-areas: 'img-1 img-1 img-1 img-1'
-                             'img-2 img-2 img-2 img-2'
-                             'img-3 img-3 img-3 img-3'
-                             'img-4 img-4 img-4 img-4'
-                             'img-5 img-5 img-5 img-5'
-                             'img-6 img-6 img-6 img-6'
-                             'img-7 img-7 img-7 img-7'
-                             'img-9 img-9 img-9 img-9'
-                             'img-10 img-10 img-10 img-10'
-                             'img-8 img-8 img-8 img-8'
-                             ;
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
     }
-    .img-2,
-    .img-3,
-    .img-4,
-    .img-5,
-    .img-6,
-    .img-7,
-    .img-9,
-    .img-10{
-        min-height: 10rem;
-        height: 10rem;
-    }
-    .img-1,
-    .img-8{
-        min-height: 20rem;
-        height: 50rem;
+    .about-container{
+        width: 100%;
     }
 }
-
 
 @media (max-width: 800px) {
     .card-group{
@@ -446,4 +469,43 @@ footer li a:hover{
 	.navbar .nav-item .nav-link, .dropdown-item{
         text-align: center;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .image-gallery{
+        grid-template-areas: 'img-1 img-1 img-1 img-1'
+                             'img-2 img-2 img-2 img-2'
+                             'img-3 img-3 img-3 img-3'
+                             'img-4 img-4 img-4 img-4'
+                             'img-5 img-5 img-5 img-5'
+                             'img-6 img-6 img-6 img-6'
+                             'img-7 img-7 img-7 img-7'
+                             'img-9 img-9 img-9 img-9'
+                             'img-10 img-10 img-10 img-10'
+                             'img-8 img-8 img-8 img-8'
+                             ;
+    }
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6,
+    .img-7,
+    .img-9,
+    .img-10{
+        min-height: 10rem;
+        height: 10rem;
+    }
+    .img-1,
+    .img-8{
+        min-height: 20rem;
+        height: 50rem;
+    }
+    .about-section{
+        padding: 0;
+    }
+    .about-container{
+        padding: 60px;
+    }
+
 }
