@@ -268,11 +268,11 @@ main .cont{
 }
 
 
-.team-section{
+#team-section{
     background: #91397f;
     padding: 1px 0px;
 }
-.team-section h1{
+#team-section h1{
     font-size: 40px;
     margin-top: 20px;
     color:#eee;
