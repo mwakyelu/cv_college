@@ -294,6 +294,7 @@ main .cont{
     overflow: hidden;
     text-align: center;
     background-color: #91397f;
+    display: none;
 }
 
 .team-card .team-card-image img{
@@ -343,6 +344,24 @@ main .cont{
     color: #f0f0f0;
     transform: scale(1.5);
 }
+
+.btn-load{
+    padding: .7rem 2rem;
+    background: royalblue;
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 1.3rem;
+    cursor: pointer;
+    outline: none;
+    margin: 30 auto;
+    align-self: center;
+    transition: .3s;
+}
+.btn-load:hover{
+    opacity: .8;
+}
+
 
 
 

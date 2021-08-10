@@ -134,7 +134,108 @@
                 </div>
             </div>
           </div>
+          <div class="team-card">
+            <div class="team-card-image">
+              <img src="img/card-back.jpg" alt="">
+            </div>
+            <div class="staff-image">
+              <img src="img/madam-front.jpg" alt="">
+            </div>
+            <div class="team-card-info">
+              <h3>Firstname Lastname</h3>
+              <span> <i class="fas fa-chalkboard-teacher">Instructor</i></span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae enim soluta necessitatibus vel la</p>
+                <div class="social-icons">
+                  <a href="#" class="fab fa-linkedin-in"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-image">
+              <img src="img/card-back.jpg" alt="">
+            </div>
+            <div class="staff-image">
+              <img src="img/ceo-front.jpg" alt="">
+            </div>
+            <div class="team-card-info">
+              <h3>Firstname Lastname</h3>
+              <span> <i class="fas fa-chalkboard-teacher">Instructor</i></span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae enim soluta necessitatibus vel la</p>
+                <div class="social-icons">
+                  <a href="#" class="fab fa-linkedin-in"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-image">
+              <img src="img/card-back.jpg" alt="">
+            </div>
+            <div class="staff-image">
+              <img src="img/ceo-front.jpg" alt="">
+            </div>
+            <div class="team-card-info">
+              <h3>Firstname Lastname</h3>
+              <span> <i class="fas fa-chalkboard-teacher">Instructor</i></span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae enim soluta necessitatibus vel la</p>
+                <div class="social-icons">
+                  <a href="#" class="fab fa-linkedin-in"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-image">
+              <img src="img/card-back.jpg" alt="">
+            </div>
+            <div class="staff-image">
+              <img src="img/madam-front.jpg" alt="">
+            </div>
+            <div class="team-card-info">
+              <h3>Firstname Lastname</h3>
+              <span> <i class="fas fa-chalkboard-teacher">Instructor</i></span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae enim soluta necessitatibus vel la</p>
+                <div class="social-icons">
+                  <a href="#" class="fab fa-linkedin-in"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-image">
+              <img src="img/card-back.jpg" alt="">
+            </div>
+            <div class="staff-image">
+              <img src="img/ceo-front.jpg" alt="">
+            </div>
+            <div class="team-card-info">
+              <h3>Firstname Lastname</h3>
+              <span> <i class="fas fa-chalkboard-teacher">Instructor</i></span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae enim soluta necessitatibus vel la</p>
+                <div class="social-icons">
+                  <a href="#" class="fab fa-linkedin-in"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+          </div>
         </div>
+        <button class="btn-load">Load More</button>
       </section>
     </main>
       <!-- Footer -->
@@ -250,7 +351,18 @@
       </footer>
       <!-- Footer -->
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+      <script>
+        $(".team-card").slice(0, 4).show()
+        $(".btn-load").on("click", function(){
+          $(".team-card:hidden").slice(0, 4).slideDown()
+          if($(".team-card:hidden").length === 0){
+            $(".btn-load").fadeOut('slow')
+          }
+        })
+      </script>
 </body>
 </html>
