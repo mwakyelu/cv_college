@@ -54,16 +54,6 @@ main{
     font-weight: bold;
 }
 
-.mycarousel{
-    overflow: hidden;
-    width: 80%;
-    background-color: #5f2253;
-    margin: auto;
-    color: #fff;
-    border-radius: 10px;
-}
-
-
 .main-section{
     width: 100%;
     min-height: 100vh;
@@ -217,7 +207,7 @@ main .cont{
     padding: 50px;
     background: #e6e3e3
 }
-.card{
+.bg-burgundy{
     background: #5f2253;
     font-weight: bold;
 }
