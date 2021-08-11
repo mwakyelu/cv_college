@@ -38,7 +38,20 @@ header div.jumbotron{
     background: url("../img/university.jpg") no-repeat 0px;
     background-size:cover;  
     text-align: center;
-    font-size: 50px;
+}
+
+header div.jumbotron h1{
+    margin-top: 100px;
+    color: #000;
+
+}
+header div.jumbotron p{
+    color: #fff;
+    background: #000;
+    max-width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px #000;
 }
 
 
@@ -187,6 +200,7 @@ main .cont{
     margin: 10px;
 	float: right;
 	width: 65%;
+    border-radius: 10px;
 }
 .main_column h1, section h1{
     font-weight: bold;
@@ -209,7 +223,7 @@ main .cont{
 }
 .bg-burgundy{
     background: #5f2253;
-    font-weight: bold;
+    color: #fff;
 }
 .funding, .second_column{
     background: #5f2253;
@@ -265,7 +279,7 @@ main .cont{
 #team-section h1{
     font-size: 40px;
     margin-top: 20px;
-    color:#eee;
+    color:#fff;
     text-align: center;
 }
 
