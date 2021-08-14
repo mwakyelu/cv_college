@@ -24,7 +24,7 @@
     height: 80vh;
     overflow: auto;
 }
-    .table-wrapper-scroll-y {
+.table-wrapper-scroll-y {
     display: block;
 }
 
@@ -210,6 +210,9 @@ main .cont{
 	width: 25%;
 }
 
+.sidebar .main_links{
+    display: flex;
+}
 .sidebar .main_links li{
     list-style: none;
     line-height: 40px;
@@ -488,7 +491,7 @@ footer li a:hover{
 
 @media screen and (max-width:1200px) {
     .about-container{
-        padding: 80px;
+        padding: 80px;      
     }
     
 }
@@ -618,5 +621,4 @@ footer li a:hover{
     .about-container{
         padding: 60px;
     }
-
 }
