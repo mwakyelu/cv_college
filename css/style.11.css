@@ -212,6 +212,7 @@ main .cont{
 
 .sidebar .main_links{
     display: flex;
+    flex-direction: column;
 }
 .sidebar .main_links li{
     list-style: none;
@@ -377,6 +378,9 @@ main .cont{
 }
 
 
+.second_column .container .list-group{
+    width: 50%; 
+}
 
 
 /* ####### Footer ####### */
@@ -433,7 +437,7 @@ main .cont{
 
 footer li {
     display: inline-block;
-    line-height: 50px;
+    line-height: 40px;
     padding-right: 10px;
     list-style-type: none;
     text-align: left;
@@ -447,32 +451,34 @@ footer li a:hover{
     color: #fff;
 }
 
+.connect-uni ul{
+    margin: 0;
+}
 
 
-/* Float four columns side by side */
 .column {
     float: left;
     width: 25%;
     padding: 0 10px;
-  }
+}
   
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
   
-  /* Clear floats after the columns */
-  .row:after {
+.row {margin: 0 -5px;}
+  
+ 
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* Style the counter cards */
-  .mycard {
+
+.mycard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-  }
+}
 
 
 
@@ -493,7 +499,22 @@ footer li a:hover{
     .about-container{
         padding: 80px;      
     }
-    
+    .sidebar .main_links{
+        display: block;
+    }
+    .second_column .container .list-group{
+        width: 70%; 
+    }
+    .on-this-site{
+        display: none;
+    }
+    .footer-content .footer-box{
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        padding: 20px;
+     }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -526,6 +547,17 @@ footer li a:hover{
     .about-container{
         width: 100%;
     }
+    .second_column .container .list-group{
+        width: 70%; 
+    }
+    .footer-content .footer-box{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+     }
+ 
+    
 }
 
 @media (max-width: 800px) {
@@ -556,6 +588,9 @@ footer li a:hover{
         text-align: center;
         width: 100%;
     }
+    .second_column .container .list-group{
+        width: 100%; 
+    }
     .main_links li{
         display: inline-block;
         padding: 10px;
@@ -580,6 +615,7 @@ footer li a:hover{
     .copyright{
         width: 100%;
     }
+
 	.navbar .nav-item .nav-link, .dropdown-item{
         text-align: center;
     }
@@ -620,5 +656,8 @@ footer li a:hover{
     }
     .about-container{
         padding: 60px;
+    }
+    .second_column .container .list-group{
+        width: 100%; 
     }
 }
