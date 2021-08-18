@@ -43,7 +43,9 @@ header div.jumbotron{
 header div.jumbotron h1{
     margin-top: 100px;
     color: #000;
-
+}
+.container h1, .sidebar h5{
+    color: #000;
 }
 header div.jumbotron p{
     color: #fff;
@@ -376,6 +378,10 @@ main .cont{
 }
 .btn-load:hover{
     opacity: .8;
+}
+.thead{
+    background-color: #000;
+    color: #eee;
 }
 
 

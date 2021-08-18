@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link href="css/style.12.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/style.13.css" rel="stylesheet">
     <link href="font-awesome/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -50,20 +51,20 @@
     </div>
 </nav>
     <header>
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid" data-aos="fade-out">
         <h1 class="display-4">CV COLLEGE</h1>
           <p class="lead">We Provide Opportunities to Become</p>
       </div>
     </header>
     <main>
       <div class="container">
-        <section class="main_column">
+        <section class="main_column" data-aos="fade-left">
           <div>
             <h1>Academics</h1>
           <p>The essence of CV College is the academic diversity design. The best students and faculty are attracted to the college by the appeal of being part of a compelling intellectual and creative project — a community of scholars and career enthusiastic students characterized by facilitative collaboration, innovation, and creativity. The sidelined by merit alone are given opportunity through the window of the virtue of exhibiting potential talents to excel in one of the academic trucks we offer, believing that all are genius except environmental influence. Professionals are what their teachers are! Students get the experience of attending a truly patriotic environment facilitating their carrier growth to fruition. We always envision to recruit national wide students from various walks of ethnicities and backgrounds and faculty are global citizens, hence an exposure to culture, students, faculties and enabling field and research opportunities throughout Tanzania and beyond.</p>
           </div>
         </section>
-        <section class="sidebar">
+        <section class="sidebar" data-aos="fade-right">
           <h5>Available in this site</h5>
           <ul class="main_links">
             <li><a href="programs.html">Academic Programs</a></li>
@@ -74,7 +75,7 @@
         </section>
       </div>
       <section class="second_column bg-burgundy w-100 overflow-hidden">
-        <div class="container">
+        <div class="container" data-aos="fade-out">
         <h2 class="font-weight-bold">Academic and career mentorship </h2>
         <p>To embrace our peculiar vision of enhancing potentials apart from striving to acquire financial aids for needy students we also have a set of regulations to guide students mentorship at CV college. This is crucial in helping students focus on their purpose and thus we enhance hidden potentials vested in every individual attached to us. </p>
         <p>Through our <b><i>Fit for Purpose</i></b> policy we progressively dig into students potentials and direct the focus towards what is potential and peculiar for each student. We provide an environment that will assist to prove right that <b><i>all are genius given proper environment.</i></b> </p>
@@ -193,6 +194,14 @@
     <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        easing: 'ease-in-out'
+      });
+    </script>  
 </body>
 </html>
