@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link href="css/style.12.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/style.13.css" rel="stylesheet">
     <link href="font-awesome/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -51,7 +52,7 @@
 </nav>
 
     <header>
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid" data-aos="fade-out">
         <h1 class="display-4">CV COLLEGE</h1>
           <p class="lead">We Provide Opportunities to Become</p>
       </div>
@@ -59,7 +60,7 @@
     <main>
         <section class="finance">
             <h1 class="main_title">WHY INVEST AT CV COLLEGE EDUCATION AID?</h1>
-            <div class="card-columns d-lg-flex">
+            <div class="card-columns d-lg-flex" data-aos="fade-up">
                 <div class="card text-white text-center bg-burgundy">
                     <img src="img/lecturer.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -88,7 +89,7 @@
         </section>
         <section class="funding bg-burgundy">
             <h2 class="main_title p-4">FUNDIND OPTIONS</h2>
-            <div class="funding_options p-1">
+            <div class="funding_options p-1" data-aos="fade-out" data-aos-offset="100">
                 <p>To pay for their education, most students and families combine funding types such as scholarships, grants, loans, and savings. CVC’s Office of Financial Aid can help you coordinate these various options.</p>
                 <p>We encourage you — no matter your financial situation — to apply for financial aid as soon as possible. Meeting our deadlines will help you maximize your financial aid options.</p> 
                 <p>Of note is the reality that, grants are very few and vary in number every year pending availability from donors. Therefore meticulous scrutiny process is embedded with selection of true needy students to be offered meagerly available grants.</p> 
@@ -207,6 +208,14 @@
     <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        easing: 'ease-in-out'
+      });
+    </script>  
 </body>
 </html>

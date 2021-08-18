@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link href="css/style.12.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/style.13.css" rel="stylesheet">
     <link href="font-awesome/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -48,7 +49,7 @@
     </div>
 </nav>
       <header>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" data-aos="fade-out">
           <h1 class="display-4">HELPPER Program</h1>
           <p class="lead">Healthcare Leveraging via Pathologist and Physician Encounters in Remote areas – Program (HELPPER Program)</p>
         </div>
@@ -56,7 +57,7 @@
       <main>
         <section>
           <div class="container">
-            <section class="main_column bg-burgundy p-3">
+            <section class="main_column bg-burgundy p-3" data-aos="fade-left">
               <div>
                 <h3 class="font-weight-bold">Our Vision</h3>
                 <p>To become the superior and dependable provider of solutions to accurate and affordable high-quality healthcare services to marginalized communities within their localities.</p>
@@ -64,7 +65,7 @@
                 <p>To leverage healthcare provision system by deploying general and specialist medical care providers to do early detection, timely diagnosis and appropriate treatment guidance at the vicinity of the marginalized remote users</p>
               </div>
             </section>
-            <section class="sidebar">
+            <section class="sidebar" data-aos="fade-right">
               <h5>Available in this site</h5>
               <ul class="main_links">
                 <li><a href="programs.html">Academic Programs</a></li>
@@ -244,6 +245,14 @@
     <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        easing: 'ease-in-out'
+      });
+    </script>  
 </body>
 </html>
