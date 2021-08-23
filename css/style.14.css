@@ -286,7 +286,6 @@ main .cont{
 .mid-bar .mid-bar-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     overflow: hidden;
     margin: 30px 0px;
 }
@@ -441,6 +440,7 @@ main .cont{
     grid-gap: 2rem;
     background: #f1f1f1;
     margin-bottom: 2rem;
+    color: #000;
 }
 
 .helpper-container .helpper-text{
@@ -451,6 +451,48 @@ main .cont{
     order: 2;
 }
 
+/* #######PARTNERS####### */
+.partners-container{
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    background: #f1f1f1;
+}
+.partners-container .partner img{
+    width: 30%;
+    height: 160px;
+    /* margin: auto; */
+}
+
+
+.partners-container .partner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.partners-container .partner .partner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.partners-container h3{
+    margin: 10px 0;
+    color: #000;
+}
+.partners-container .partner:nth-child(even) img{
+    order: 2;
+}
+
+
+/* ########SERVICES########## */
+.services{
+    margin-top: 50px;
+}
 
 /* ####### Footer ####### */
 
