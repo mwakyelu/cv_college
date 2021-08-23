@@ -19,6 +19,17 @@
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
+.bg-burgundy{
+    background: #5f2253;
+    color: #fff;
+}
+.bg-burgundy-light{
+    background: #91397f;
+    color: #fff;
+}
+.c-burgundy{
+    color: #91397f;;
+}
 .my-custom-scrollbar {
     position: relative;
     height: 80vh;
@@ -227,14 +238,7 @@ main .cont{
     padding: 50px;
     background: #e6e3e3
 }
-.bg-burgundy{
-    background: #5f2253;
-    color: #fff;
-}
-.bg-burgundy-light{
-    background: #91397f;
-    color: #fff;
-}
+
 .funding, .second_column{
     margin: 20px 0px;
 }
