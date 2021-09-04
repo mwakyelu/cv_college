@@ -682,6 +682,16 @@ footer li a:hover{
     .helpper-container .helpper-card{
         display: block;
     }
+    .partners-container .partner{
+        display: block;
+        text-align: center;
+    }
+    .partners-container .partner img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
     .main-footer{
         overflow: hidden;
     }
@@ -794,5 +804,8 @@ footer li a:hover{
     }
     #team-section .team-text{
         width: 100%;  
+    }
+    .partners-container .partner img{
+        width: 50%;
     }
 }
