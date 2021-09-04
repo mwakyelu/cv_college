@@ -19,6 +19,17 @@
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
+.bg-burgundy{
+    background: #5f2253;
+    color: #fff;
+}
+.bg-burgundy-light{
+    background: #91397f;
+    color: #fff;
+}
+.c-burgundy{
+    color: #91397f;;
+}
 .my-custom-scrollbar {
     position: relative;
     height: 80vh;
@@ -227,10 +238,7 @@ main .cont{
     padding: 50px;
     background: #e6e3e3
 }
-.bg-burgundy{
-    background: #5f2253;
-    color: #fff;
-}
+
 .funding, .second_column{
     margin: 20px 0px;
 }
@@ -263,7 +271,7 @@ main .cont{
     float: right;
     background-color:#f1f1f1;
     /* background: rgba(253, 253, 253, 0.801); */
-    padding: 100px;
+    padding: 50px;
 }
 
 .about-text{
@@ -271,6 +279,36 @@ main .cont{
     text-align: justify;
     margin-bottom: 40px;
 }
+
+.mid-bar{
+    min-height: 30vh;
+    padding: 20px;
+}
+.mid-bar h5{
+    color: #000;
+}
+.mid-bar .mid-bar-container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 30px 0px;
+}
+.mid-bar .mid-bar-container .mid-box{
+    margin: 10px;
+    border: 2px royalblue solid;
+}
+.mid-bar .mid-bar-container .mid-box a{
+    color: #fff;
+    padding: 20px 30px;
+    display: inline-block;     
+    position: relative;        
+    width: 100%;
+    text-decoration: none;
+}
+.mid-bar .mid-bar-container .mid-box a:hover{
+    opacity: 0.5;
+}
+
 
 #team-section{
     background: #91397f;
@@ -300,7 +338,11 @@ main .cont{
     background-color: #91397f;
     display: none;
 }
-
+#team-section .team-text{
+    width: 70%;
+    margin: auto;
+    color: #fff;
+}
 .team-card .team-card-image img{
     width: 100%;
     height: 200px;
@@ -377,11 +419,83 @@ main .cont{
     color: #eee;
 }
 
-
 .second_column .container .list-group{
     width: 50%; 
 }
 
+.helpper-container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+.helpper-container .helpper-card img{
+    width: 100%;
+    height: 400px;
+}
+.helpper-container .helpper-card h3{
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.helpper-container .helpper-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    background: #f1f1f1;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.helpper-container .helpper-text{
+    padding: 2rem;
+}
+
+.helpper-card:nth-child(even) img{
+    order: 2;
+}
+
+/* #######PARTNERS####### */
+.partners-container{
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    background: #f1f1f1;
+}
+.partners-container .partner img{
+    width: 30%;
+    height: 160px;
+}
+
+
+.partners-container .partner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.partners-container .partner .partner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.partners-container h3{
+    margin: 10px 0;
+    color: #000;
+}
+.partners-container .partner:nth-child(even) img{
+    order: 2;
+}
+
+
+/* ########SERVICES########## */
+.services{
+    margin-top: 50px;
+}
 
 /* ####### Footer ####### */
 
@@ -547,17 +661,35 @@ footer li a:hover{
         display: flex;
         justify-content: center;
     }
- 
-    
+    .mid-bar .mid-bar-container .mid-box{
+        display: inline-block;
+    }
+
 }
 
 @media (max-width: 800px) {
-    
+    .mid-bar .mid-bar-container{
+        display: inline-block;
+        text-align: center;
+    }
     .card-group{
         width: 80%;
         margin: auto;
         flex-wrap: wrap;
         padding-bottom: 20px;
+    }
+    .helpper-container .helpper-card{
+        display: block;
+    }
+    .partners-container .partner{
+        display: block;
+        text-align: center;
+    }
+    .partners-container .partner img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
     }
     .main-footer{
         overflow: hidden;
@@ -656,10 +788,23 @@ footer li a:hover{
     .funding_options{
         width: 100%;
     }
-
+    .mid-bar .mid-bar-container{
+        display: block;
+        text-align: center;
+    }
+    .mid-bar .mid-bar-container .mid-box{
+        width: 100%;
+    }
+    
     .full-box{
         display: block;
         min-width: 100%;
         margin-bottom: 20px;
+    }
+    #team-section .team-text{
+        width: 100%;  
+    }
+    .partners-container .partner img{
+        width: 50%;
     }
 }
