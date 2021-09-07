@@ -805,11 +805,12 @@ footer li a:hover{
         display: block;
         text-align: center;
     }
+
     .partners-container .partner img{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: auto;
     }
     .main-footer{
         overflow: hidden;
@@ -992,13 +993,19 @@ footer li a:hover{
     #team-section .team-text{
         width: 100%;  
     }
+    .partners-container .partner .partner-text {
+        padding: 0;
+    }
     .partners-container .partner img{
-        width: 50%;
+        width: auto;
     }
     .giving-helpper .giving-content .donation{
         display: block;
         width: 100%;
         margin: auto;
+    }
+    .giving-helpper .giving-content .donation p{
+        font-size: 18px;
     }
     .giving-helpper .giving-content .donation .donation-box img{
         width: 100%;
