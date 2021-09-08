@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="css/style.20.css" rel="stylesheet">
+    <link href="css/style.21.css" rel="stylesheet">
     <link href="font-awesome/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -564,14 +564,14 @@
                     <label for="exampleFormControlFile1">Please upload a flier for this event, if available</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                   </div>
-                  <button class="btn bg-burgundy-light btn-lg" type="submit">Submit form</button>
+                  <button class="btn bg-burgundy-light btn-lg rounded-0" type="submit">Submit form</button>
                 </form>                
               </div>
             </div>
           </div>
         </section>
         <section class="volunteers" id="volunteers">
-s
+
         </section>
         <section class="contact" id="contact">
           <div class="contact-container">
@@ -604,7 +604,7 @@ s
                 </ul>
               </div>
             </div>
-            <div class="contact-form">
+            <form class="contact-form">
               <h4>Send a Message</h4>
               <div class="form_box">
                 <div class="input-box width50" >
@@ -624,14 +624,15 @@ s
                   <span>Mobile Number</span> 
                 </div>
                 <div class="input-box width100">
-                  <input type="text" required>
+                  <!-- <input type="text" required> -->
+                  <textarea required></textarea>
                   <span>Write your Message here....</span> 
                 </div>
                 <div class="input-box width100">
                   <input class="btn bg-burgundy-light" type="submit" value="Send" required>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </section>
       </main>
